@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+  height: 90vh;
+  width: auto;
+  position: relative;
+}
+.nav-item {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+section > h2 {
+  position: relative;
+  top: 10vh;
+  font-family: serif;
+  color: #095489;
+}
+
+body {
+  background-color: #d0e6f6;
+}
+h3 {
+  position: relative;
+  top: 8vh;
+}
+
+.bgnavbar a {
+  font-weight: bold;
+  color: #095489;
+  font-size: 1.6vw;
+  text-align: center;
+  margin: 2vh;
+}
+.bgnavbar a:hover {
+  color: #18384e;
+}
+
+/* .aboutcard p {
+    font-size: 1vw;
+} */
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+.namecolor {
+  background: linear-gradient(
+    to right,
+    #095489 0,
+    hsl(0, 0%, 100%) 10%,
+    #095489 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+.jumbotron-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutme {
+  display: none;
+}
+
+.aboutcontainer {
+  /* position: relative; */
+}
+
+.largeicon {
+  position: absolute;
+  bottom: 0;
+  /* end:0; */
+  right: 1vw;
+  margin-left: 4vw;
+  margin-bottom: 0vw;
+  /* me-4 mb-4 */
+}
+
+@media screen and (max-width: 930px) {
+  .aboutmeanimation {
+    display: none;
+  }
+
+  .aboutme {
+    display: block;
+    color: #095489;
+    font-weight: bold;
+  }
+
+  .noneimg {
+    display: none;
+  }
+  /* .navbar {
+    background-color: #d0e6f6 !important;
+  } */
+  button {
+    position: absolute;
+    top: 5vw;
+  }
+  .bgnavbar a {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section > h2 {
+    top: 2vh;
+  }
+  section > h3 {
+    top: 3vh;
+  }
+  p {
+    font-size: 2vh;
+  }
+
+  .smallicon a i {
+    font-size: 6vw;
+    position: relative;
+    /* text-: center; */
+    left: -23%;
+    bottom: 2vh;
+  }
+  .smallicon {
+  }
+}
+
+.aboutmeanimation {
+  color: hsl(246, 48%, 16%);
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  font-size: larger;
+  letter-spacing: 3px;
+  overflow: hidden;
+  border-right: 2px solid tra;
+  white-space: nowrap;
+  animation: typewriter 4s 1s 1 normal both, blinkTextCursor 500ms 1;
+}
+
+.p2delay {
+  animation-delay: 2s;
+}
+.p3delay {
+  animation-delay: 4s;
+}
+.p4delay {
+  animation-delay: 7s;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 710px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
