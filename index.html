@@ -16,6 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <link rel="stylesheet" href="portfolio.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
 
   </head>
   <body>
@@ -27,10 +29,10 @@
 
         <nav class="navbar navbar-expand-lg vh-100" style="background-color: #a1cff0" >
           <div class="container-fluid" style="display: flex; flex-direction: column;">
-            <div class="noneimg">
+            <div class="noneimg"  data-aos="fade-right">
               <img
                 src="abdallah.jpg"
-                alt=""
+                alt="abdallah jpg"
                 class="rounded w-75 mx-auto d-block "
               />
             </div>
@@ -66,29 +68,29 @@
         >
           <section id="about" class="aboutcontainer">
             <h2
-              style="font-size: 50px; font-weight: bold; font-family: monospace"
-              class="namecolor"
+              style="font-size: 50px; font-weight: bold;"
+              class="namecolor abdallahheight"
             >
               ABDALLAH HUSSEIN
             </h2>
             <h3 class="namecolor">Full stack web developer</h3>
 
-            <div class="position-absolute top-50 start-0 translate-middle-y">              
+            <div class="position-absolute top-50 start-0 translate-middle-y" >              
                 
-                <div class="card bg-transparent border-0">                 
+                <div class="card bg-transparent border-0" style="font-size: larger; top: 9vh;">                 
                   <p class="aboutmeanimation">
                     Hello, I am Abdallah,
                     <br />
                   </p>
                   <p class="aboutmeanimation p2delay">
                     What do you like ? <br />
-                    I like the technology and everything related to it.
+                    I like the technology and everything related <br> to it.
                     <br />
                   </p>
                   <p class="aboutmeanimation p3delay">
                     What are you doing for that ? <br />
     
-                    Recently I joined to the awesome Orange Academy <br> for training as a Full-stack web developer. <br />
+                    Recently I joined to the awesome Orange <br> Academy for training as a Full-stack web <br> developer. <br />
                   </p>
                   <p class="aboutmeanimation p4delay">
                     For more about me, please
@@ -100,6 +102,7 @@
                 </div>
 
  
+                <div class="aboutnoanimation">
               <p class="aboutme">
                 Hello, I am Abdallah,
                 <br />
@@ -124,8 +127,10 @@
               </p>
             </div>
 
+            </div>
+
                                   <!-- icons -->
-            <div class=" largeicon smallicon">
+            <div class=" largeicon smallicon" data-aos="zoom-out-left">
               <a href="tel:0778086334"
                 ><i class="fa-solid fa-phone fa-3x me-4"></i
               ></a>
@@ -147,24 +152,25 @@
             <h2>EXPERIENCE</h2>
 
             <div
-              class="position-absolute top-50 start-0 translate-middle-y w-100"
+              class="position-absolute top-50 start-0 translate-middle-y w-100 experiencecardhight"
             >
               <div
-                class="jumbotron text-white jumbotron-image shadow rounded p-5 m-1 mb-2"
+                class="jumbotron text-white jumbotron-image shadow rounded p-5 m-1 mb-2 experienceheight"
                 style="
                   background-image: url(https://www.pinsentmasons.com/-/media/images/graduate/top-level-heroes/work-experience-desktop-hero-1440x700px.jpg?h=583&w=1200&hash=0E165B67FCBBD496B7F5C1D065643684);
-                  min-height: 50vh;
-                  max-height: 80vh;
+                  /* min-height: 50vh;
+                  max-height: 80vh; */
                 "
+                data-aos="flip-down"
               >
-                <h2 class="mb-4" style="font-family: Sans-serif;">Quality Assurance</h2>
+                <h2 class="mb-4 expfont" style="font-family: Sans-serif;">Quality Assurance</h2>
 
                 <p
-                  class="mb-4 lead"                
+                  class="mb-4 lead expfont"                
                 >
                   I have worked as freelance in QA field with multiple projects, <br>
                   mainly my responsibility was:
-                  <ul class="lead" style="list-style: decimal;">
+                  <ul class="lead expfont" style="list-style: decimal;">
                     <li>Manual testing</li>
                     <li>Write test case scenarios</li>
                     <li>Acceptance testing for website and mobile app</li>
@@ -182,50 +188,58 @@
             <h2 >EDUCATION</h2>
 
             <div class="position-absolute top-50 start-0 translate-middle-y" >
-            <div class="card bg-transparent border-0" style="margin-top:16vh;">
-              <img class="card-img-top" style="height: 30vh; width: 70vw;" src="JU.jpg">
+
+              <div >
+            <div class="card bg-transparent border-0" style="margin-top:16vh;" class="educationheight">
+              <img class="card-img-top" style="height: 30vh; width: 70vw;" src="JU.jpg"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <div class="card-body">
-                <h5 class="card-title" style="font-family: Sans-serif; color: #095489; font-weight: bolder;">Management Information System | The University of Jordan</h5>
-                <p class="card-text" style="font-family: Sans-serif; color: #095489;">Duration: September 2017 - August 2020 <br />
+                <h5 class="card-title edufont" style="font-family: Sans-serif; color: #095489; font-weight: bolder;">Management Information System | The University of Jordan</h5>
+                <p class="card-text edufont" style="font-family: Sans-serif; color: #095489;">Duration: September 2017 - August 2020 <br />
                   GPA: 3/4 Very good</p>                
               </div>
             </div>
 
             <div class="card bg-transparent border-0">
-              <h5 class="card-title mb-0 ms-3" style="font-family: Sans-serif; color: #095489; font-weight: bolder;">Courses</h5>
-              <p class="card-text">
+              <h5 class="card-title mb-0 ms-3 edufont" style="font-family: Sans-serif; color: #095489; font-weight: bolder;">Courses</h5>
+              <p class="card-text ">
                 <ul style="font-family: Sans-serif; color: #095489;">
-                  <li>
+                  <li class="edufont">
                     Full stack web developer trainee at Orange Coding Academy -
                     Present
                   </li>
-                  <li>
+                  <li class="edufont">
                     CTFL (ISTQB Foundation course - Pluralsight) - November 2021
                   </li>
-                  <li>
+                  <li class="edufont">
                     Oracle Certified Associate, Java SE 8 Programmer - June 2021
                   </li>                 
-                  <li>
+                  <li class="edufont">
                     Design Thinking | Crash Course (Ahmad Alhuwwari) - April
                     2020
                   </li>                  
                 </ul>
               </p>
             </div>
+            </div>
           </div> 
           </section>
 
 
                                   <!-- Projects Section -->
-          <section id="projects">
-            <h2>PROJECTS</h2>
+          <section id="projects" class="respnproject">
+            <h2 class="projh2">PROJECTS</h2>
 
             <div class="position-absolute top-50 start-0 translate-middle-y">
               <div
-                class="bg-image card shadow-1-strong mb-2 m-2 "
+                class="bg-image card shadow-1-strong mb-2 m-1 "
                 style=" height: 30vh;
                   background-image: url('https://www.bootstrapdash.com/wp-content/uploads/2017/08/bootstrap-4-beta-whats-new.jpg');
                 "
+                data-aos="fade-up"
+                data-aos-duration="3000"
               >
                 <div class="card-body text-white">
                   <h5 class="card-title">Bootstrap</h5>
@@ -247,9 +261,10 @@
               <div class="card-group mb-0">
                 <div
                   class="bg-image card shadow-1-strong m-1 rounded"
-                  style="
+                  style=" 
                     background-image: url('https://www.w4u.fr/sites/default/files/2017-04/css_6.jpg');
                   "
+                  
                 >
                   <div class="card-body text-white">
                     <h5 class="card-title">Flex & Grid CSS</h5>
@@ -271,6 +286,7 @@
                   style="
                     background-image: url('https://cdn.mos.cms.futurecdn.net/mHzNZqeArjYfD2NoJLu9Ag-480-80.jpg');
                   "
+                  
                 >
                   <div class="card-body text-white">
                     <h5 class="card-title">JoJobs Wireframe & Mockup</h5>
@@ -308,5 +324,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+<!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
   </body>
 </html>

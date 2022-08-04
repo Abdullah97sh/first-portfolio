@@ -20,6 +20,23 @@ section > h2 {
   color: #095489;
 }
 
+h3 {
+  font-family: serif;
+  font-weight: bold;
+}
+
+.abdallahheight {
+  top: 7vh;
+}
+
+.experiencecardhight {
+  height: 50vh;
+}
+
+.experienceheight {
+  height: 60vh;
+}
+
 body {
   background-color: #d0e6f6;
 }
@@ -91,33 +108,133 @@ h3 {
   /* me-4 mb-4 */
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 960px) {
   .aboutmeanimation {
     display: none;
   }
-
   .aboutme {
     display: block;
     color: #095489;
     font-weight: bold;
   }
-
+  
   .noneimg {
     display: none;
   }
   /* .navbar {
-    background-color: #d0e6f6 !important;
-  } */
+      background-color: #d0e6f6 !important;
+    } */
   button {
     position: absolute;
     top: 5vw;
   }
   .bgnavbar a {
     font-size: 3.5vw;
+    }
+  }
+  
+
+@media screen and (min-width: 960px) {
+    .aboutnoanimation{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .aboutcontainer {
+    height: 85vh;
+  }
+
+  .aboutnoanimation {
+    position: relative;
+    top: 12vh;
+    font-size: 2.5vw;
+  }
+
+  .smallicon a i {
+    font-size: 5vw;
+    position: relative;
+    left: -45%;
+    top: 5vh;
+  }
+
+  .experienceheight {
+    height: 70vh;
+  }
+
+  .educationheight {
+    font-size: 2.2vw;
+    height: 70vh;
+  }
+  .aboutme {
+    display: block;
+    color: #095489;
+    font-weight: bold;
+  }
+  
+  .noneimg {
+    display: none;
+  }
+  /* .navbar {
+      background-color: #d0e6f6 !important;
+    } */
+  button {
+    position: absolute;
+    top: 5vw;
+  }
+  .bgnavbar a {
+    font-size: 3.5vw;
+    }
+  }
+
+
+
+@media screen and (max-width: 480px) {
+  .respnproject {
+    height: 120vh;
+  } 
+  .projh2 {
+    top: 10vh;
+  }
+
+  .aboutcontainer {
+    height: 87vh;
+  }
+
+  .aboutnoanimation {
+    position: relative;
+    top: 12vh;
+    font-size: 3.6vw;
+  }
+
+  .smallicon a i {
+    font-size: 5vw;
+    position: relative;
+    left: -20%;
+    top: 5vh;
+  }
+
+  .experienceheight {
+    height: 72vh;
+    
+  }
+  .expfont{
+    font-size: 2.5vh;
+  }
+
+  .educationheight {
+    height: 75vh;
+  }
+  .edufont{
+    font-size: 2.8vw;
+
   }
 }
 
-@media screen and (max-width: 700px) {
+
+
+@media screen and (max-width: 700px) and (min-width: 481px) {
   section > h2 {
     top: 2vh;
   }
@@ -135,8 +252,7 @@ h3 {
     left: -23%;
     bottom: 2vh;
   }
-  .smallicon {
-  }
+
 }
 
 .aboutmeanimation {
